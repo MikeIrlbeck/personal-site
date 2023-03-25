@@ -135,6 +135,21 @@ Navbar
   color: var(--primaryColor);
 }
 
+@media screen and (max-width: 750px) {
+  .nav-links a {
+    font-size: 1rem;
+  }
+  .social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+}
+
 .hero {
   margin: 0 auto;
   display: block;
