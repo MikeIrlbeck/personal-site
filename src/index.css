@@ -172,7 +172,9 @@ Hero
   margin: 0 auto;
   border: 1px black;
   max-width: 100%;
-  max-height: 500;
+  height: 95vh;
+
+  /* max-height: 500; */
 }
 
 .btn {
