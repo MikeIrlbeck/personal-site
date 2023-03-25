@@ -16,6 +16,8 @@ Variables
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
   --mainSpacing: 0.3rem;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
@@ -155,7 +157,14 @@ Navbar
   }
 }
 
+/* 
+====== 
+Hero
+======
+*/
 .hero {
+  position: relative;
+  /* relative - allows the hero-btn to be positioned nicely */
   margin: 0 auto;
   display: block;
 }
@@ -164,4 +173,27 @@ Navbar
   border: 1px black;
   max-width: 100%;
   max-height: 500;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--mainBackground);
+  color: var(--primaryDarkColor);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.hero-btn {
+  position: absolute;
+  top: vh;
+  left: 2vw;
 }
