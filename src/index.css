@@ -84,6 +84,7 @@ Navbar
   background: var(--mainWhite);
   height: 5rem;
   display: flex;
+
   align-items: center;
   border-bottom: 2px solid var(--primaryColor);
   box-shadow: var(--lightShadow);
@@ -115,11 +116,11 @@ Navbar
   color: var(--primaryColor);
 }
 
-.social-links {
+.social {
   display: flex;
   align-items: center;
 }
-.social-links a {
+.social a {
   text-transform: capitalize;
   display: inline-block;
   font-weight: bold;
@@ -130,7 +131,7 @@ Navbar
   padding: 0.25rem 0.5rem;
   transition: var(--mainTransition);
 }
-.social-links a:hover {
+.social a:hover {
   color: var(--primaryColor);
 }
 
