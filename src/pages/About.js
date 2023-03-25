@@ -1,9 +1,10 @@
 import React from 'react';
 
+import Bio from '../components/Bio';
 const About = () => {
   return (
     <div>
-      <h1>About!</h1>
+      <Bio />
     </div>
   );
 };
