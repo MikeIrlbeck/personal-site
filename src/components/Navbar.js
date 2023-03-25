@@ -6,13 +6,24 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='nav-center'>
-        <Link to='/'>Mike Irlbeck</Link>
+        <Link to='/'>Mike Irlbeck{social[0].icon}</Link>
+
         <ul className='nav-links'>
           {links.map((link) => {
             const { id, url, text } = link;
             return (
               <li id={id}>
                 <Link to={url}>{text}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul className='nav-links'>
+          {social.map((link) => {
+            const { id, url, icon } = link;
+            return (
+              <li id={id}>
+                <Link to={url}>{icon}</Link>
               </li>
             );
           })}

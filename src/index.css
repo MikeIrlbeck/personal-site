@@ -115,6 +115,25 @@ Navbar
   color: var(--primaryColor);
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+}
+.social-links a {
+  text-transform: capitalize;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  transition: var(--mainTransition);
+}
+.social-links a:hover {
+  color: var(--primaryColor);
+}
+
 .hero {
   margin: 0 auto;
   display: block;
