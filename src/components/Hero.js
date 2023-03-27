@@ -6,7 +6,9 @@ const Hero = () => {
   const refImg = useRef(null);
 
   useEffect(() => {
-    refImg.current.style.objectFit = isPandaShowing ? 'fill' : 'cover';
+    refImg.current.style.objectPosition = isPandaShowing
+      ? '50% 85%'
+      : '50% 50%';
   }, [isPandaShowing]);
 
   return (
