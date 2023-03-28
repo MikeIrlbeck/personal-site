@@ -5,6 +5,7 @@ const projects = [
     title: 'The HP Computer',
     subTitle: 'Built a computer from scratch',
     stars: 25,
+    video: 'https://www.youtube.com/watch?v=SB-qEYVdvXA',
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const projects = [
     title: 'Car',
     subTitle: 'Used software to make car amphibious',
     stars: 25,
+    video: 'https://www.youtube.com/watch?v=NC33DWHmWnE',
   },
   {
     id: 4,

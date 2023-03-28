@@ -3,22 +3,22 @@ import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export const links = [
   {
-    id: 1,
+    id: 'home',
     url: '/',
     text: 'home',
   },
   {
-    id: 2,
+    id: 'about',
     url: '/about',
     text: 'about',
   },
   {
-    id: 3,
+    id: 'projects',
     url: '/projects',
     text: 'projects',
   },
   {
-    id: 4,
+    id: 'contact',
     url: '/contact',
     text: 'contact',
   },
