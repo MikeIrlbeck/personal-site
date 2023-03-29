@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../data/Projects';
-import { links } from '../data/NavLinks';
+// import { links } from '../data/NavLinks';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
