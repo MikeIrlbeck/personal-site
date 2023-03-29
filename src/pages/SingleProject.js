@@ -14,7 +14,12 @@ const SingleProject = () => {
         <h1>{title}</h1>
         <h4>{subTitle}</h4>
         {video ? (
-          <iframe id='project-video' loading='lazy' src={video}></iframe>
+          <iframe
+            id='project-video'
+            title='YouTube video player'
+            loading='lazy'
+            src={video}
+          ></iframe>
         ) : (
           <img src={url} alt={`${title}`}></img>
         )}
