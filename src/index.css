@@ -27,6 +27,7 @@ Variables
   --maxWidth: 40rem;
   --fullWidth: 1170px;
 
+  --navbarHeight: 5rem;
   --projectImgWidth: 250px;
 }
 ::before,
@@ -87,7 +88,7 @@ Navbar
 */
 .navbar {
   background: var(--mainWhite);
-  height: 5rem;
+  height: var(--navbarHeight);
   display: flex;
 
   align-items: center;
@@ -271,4 +272,22 @@ Projects
   border-radius: inherit;
   /* margin-top: -110px; */
   /* calc(var(--projectImgWidth)); */
+}
+
+.single-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--primaryLightColor);
+  height: 100vh;
+  width: 100vw;
+}
+
+.single-project-container {
+  background-color: var(--offWhite);
+  width: 90vw;
+  margin: calc(var(--navbarHeight) + 2rem) auto;
+  border-radius: 1rem;
+  padding: 1rem;
 }
