@@ -11,17 +11,22 @@ const SingleProject = () => {
   return (
     <div className='single-project'>
       <div className='single-project-container'>
-        <h1>{title}</h1>
-        <h4>{subTitle}</h4>
+        <h1 className='page-title'>{title}</h1>
+        <h4 className='page-subtitle'>{subTitle}</h4>
         {video ? (
           <iframe
             id='project-video'
             title='YouTube video player'
             loading='lazy'
             src={video}
+            className='individual-project-img'
           ></iframe>
         ) : (
-          <img src={url} alt={`${title}`}></img>
+          <img
+            src={url}
+            alt={`${title}`}
+            className='individual-project-img'
+          ></img>
         )}
         {stars && githubLink && (
           <p>
