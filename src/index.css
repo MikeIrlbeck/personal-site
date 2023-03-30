@@ -29,6 +29,9 @@ Variables
 
   --navbarHeight: 5rem;
   --projectImgWidth: 250px;
+
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 ::before,
 ::after,
@@ -212,7 +215,12 @@ Projects
 */
 .project-container {
   display: block;
-  margin: 20px;
+  margin: 2rem;
+}
+
+.page-title {
+  /* margin: 1rem auto; */
+  text-align: center;
 }
 
 .projects-list {
@@ -235,6 +243,13 @@ Projects
   width: var(--projectImgWidth);
   height: var(--projectImgWidth);
   display: block;
+}
+
+.project:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.125);
+  /* border-color: var(--primaryLightColor); */
+  cursor: pointer;
 }
 
 .project-title {
@@ -287,7 +302,7 @@ Projects
 .single-project-container {
   background-color: var(--offWhite);
   width: 90vw;
-  margin: calc(var(--navbarHeight) + 2rem) auto;
+  margin: calc(var(--navbarHeight) + 2rem) auto 1rem;
   border-radius: 1rem;
   padding: 1rem;
 }
