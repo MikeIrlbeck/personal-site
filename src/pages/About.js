@@ -3,7 +3,7 @@ import React from 'react';
 import Bio from '../components/Bio';
 const About = () => {
   return (
-    <div>
+    <div className='page-container'>
       <Bio />
     </div>
   );

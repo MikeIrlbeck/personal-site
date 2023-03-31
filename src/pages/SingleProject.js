@@ -9,31 +9,29 @@ const SingleProject = () => {
     (item) => item.id === parseInt(id)
   );
   return (
-    <div className='single-project'>
-      <div className='single-project-container'>
-        <h1 className='page-title'>{title}</h1>
-        <h4 className='page-subtitle'>{subTitle}</h4>
-        {video ? (
-          <iframe
-            id='project-video'
-            title='YouTube video player'
-            loading='lazy'
-            src={video}
-            className='individual-project-img'
-          ></iframe>
-        ) : (
-          <img
-            src={url}
-            alt={`${title}`}
-            className='individual-project-img'
-          ></img>
-        )}
-        {stars && githubLink && (
-          <p>
-            <a href={githubLink}>Github. Stars {stars}</a>
-          </p>
-        )}
-      </div>
+    <div className='page-container'>
+      <h1 className='page-title'>{title}</h1>
+      <h4 className='page-subtitle'>{subTitle}</h4>
+      {video ? (
+        <iframe
+          id='project-video'
+          title='YouTube video player'
+          loading='lazy'
+          src={video}
+          className='individual-project-img'
+        ></iframe>
+      ) : (
+        <img
+          src={url}
+          alt={`${title}`}
+          className='individual-project-img'
+        ></img>
+      )}
+      {stars && githubLink && (
+        <p>
+          <a href={githubLink}>Github. Stars {stars}</a>
+        </p>
+      )}
     </div>
   );
 };

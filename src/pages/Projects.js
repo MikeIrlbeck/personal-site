@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Projects = () => {
   return (
-    <div className='project-container'>
+    <div className='page-container'>
       <h1 className='page-title'>Projects</h1>
       <ul className='projects-list'>
         {data.map((project) => {

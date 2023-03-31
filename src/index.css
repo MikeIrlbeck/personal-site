@@ -50,7 +50,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--mainBlack);
-  background: var(--mainBackground);
+  /* background: var(--mainBackground); */
+  background-color: var(--primaryLightColor);
   line-height: 1.4;
   font-size: 1rem;
   font-weight: 300;
@@ -84,6 +85,7 @@ a {
 img {
   width: 100%;
   display: block;
+  border-radius: 5%;
 }
 /* 
 ====== 
@@ -170,6 +172,17 @@ Navbar
 Pages
 ======
 */
+.page-container {
+  display: block;
+  background-color: var(--offWhite);
+  width: 90vw;
+  max-width: 1000px;
+  /* margin: calc(var(--navbarHeight) + 2rem) auto 1rem; */
+  margin: 2rem auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: -10;
+}
 .page-title {
   /* margin: 1rem auto; */
   text-align: center;
@@ -262,6 +275,8 @@ Projects
 }
 
 .project-title {
+  position: relative;
+  z-index: 5;
   background-color: var(--primaryLightColor);
   color: var(--mainBlack);
   overflow: hidden;
@@ -278,7 +293,10 @@ Projects
 }
 
 .project-subTitle {
+  position: absolute;
+  z-index: 5;
   background-color: var(--mainOverlayLight);
+  width: var(--projectImgWidth);
   color: var(--mainBlack);
   padding: 5px;
   /* opacity: 0.5; */
@@ -286,10 +304,10 @@ Projects
 
 .project-img {
   /* margin: 0 auto; */
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
-  z-index: -5;
+  /* z-index: -5; */
   object-fit: cover;
   width: var(--projectImgWidth);
   height: var(--projectImgWidth);
@@ -298,7 +316,7 @@ Projects
   /* calc(var(--projectImgWidth)); */
 }
 
-.single-project {
+/* .single-project {
   position: absolute;
   top: 0;
   left: 0;
@@ -306,16 +324,16 @@ Projects
   background-color: var(--primaryLightColor);
   height: 100vh;
   width: 100vw;
-}
+} */
 
-.single-project-container {
+/* .single-project-container {
   background-color: var(--offWhite);
   width: 90vw;
   max-width: 1000px;
   margin: calc(var(--navbarHeight) + 2rem) auto 1rem;
   border-radius: 1rem;
   padding: 1rem;
-}
+} */
 
 .individual-project-img {
   display: block;
