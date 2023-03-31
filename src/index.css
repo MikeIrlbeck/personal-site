@@ -173,15 +173,14 @@ Pages
 ======
 */
 .page-container {
+  position: relative;
   display: block;
   background-color: var(--offWhite);
   width: 90vw;
   max-width: 1000px;
-  /* margin: calc(var(--navbarHeight) + 2rem) auto 1rem; */
   margin: 2rem auto;
   border-radius: 1rem;
   padding: 1rem;
-  z-index: -10;
 }
 .page-title {
   /* margin: 1rem auto; */
@@ -344,4 +343,41 @@ Projects
   width: calc(var(--individualProjectImgWidth) * 1.5);
   height: var(--individualProjectImgWidth);
   border-radius: inherit;
+}
+
+.individual-project-git {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  /* transform: translate(-50%, 50%); */
+  /* each 50% refers to the components width and height respectively */
+  color: var(--primaryColor);
+}
+
+.react-icon-project {
+  font-size: 24px;
+}
+
+.git-stars {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .individual-project-git {
+    position: static;
+    /* display: block; */
+    /* margin: 1rem auto; */
+    display: flex;
+    justify-content: center;
+    /* gap: 2rem; is not supported in my browser */
+    margin-bottom: -1rem;
+  }
+
+  .git-stars {
+    display: inline-flex;
+    padding-top: 0;
+    padding-left: 2rem;
+  }
 }
