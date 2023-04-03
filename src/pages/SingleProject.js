@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaRegStar } from 'react-icons/fa';
+import { FaGithub, FaStar } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import data from '../data/Projects';
 import { useParams } from 'react-router-dom';
@@ -40,7 +40,7 @@ const SingleProject = () => {
             <FaGithub className='react-icon-project' />
             {stars && (
               <p className='git-stars'>
-                <FaRegStar className='react-icon-project' />
+                <FaStar className='react-icon-project' />
                 {stars}
               </p>
             )}
