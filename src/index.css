@@ -33,6 +33,7 @@ Variables
 
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --sharp-dark-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 ::before,
 ::after,
@@ -267,8 +268,8 @@ Projects
 }
 
 .project:hover {
-  box-shadow: var(--dark-shadow);
-  transform: scale(1.125);
+  box-shadow: var(--sharp-dark-shadow);
+  /* transform: scale(1.125); */
   /* border-color: var(--primaryLightColor); */
   cursor: pointer;
 }
