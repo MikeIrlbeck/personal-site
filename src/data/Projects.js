@@ -4,6 +4,10 @@ const projects = [
     url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fasr%2Fa7f127e8-fcce-4b14-b6c2-bb0f69960407_1.e3bc3c1960cec25208d5e4aadfbbed4b.jpeg&f=1&nofb=1&ipt=1ea8c8962dd0942d9a9bfcde056aff2bb7b262796e3949f7f5d03de859e22239&ipo=images',
     title: 'The HP Computer',
     subTitle: 'Built a computer from scratch',
+    description: [
+      'In this project, I tackled many problems including designing a web server from scratch, evaluating the attack vectors, deploying the system, and scaling across many servers. This project was coded entirely in C++. I applied technical Computer Science knowledge in servers, RESTful crud, etc.',
+      'If you like zeros and ones, then you are like me.',
+    ],
     stars: 25,
     githubLink: 'https://github.com/MikeIrlbeck/personal-site',
     video: 'https://www.youtube.com/embed/Smw3FcZewaU',
@@ -14,6 +18,10 @@ const projects = [
     title: 'Web Server',
     subTitle: 'Built a web server from scratch',
     stars: 202222221,
+    description: [
+      'In this project, I tackled many problems including designing a web server from scratch, evaluating the attack vectors, deploying the system, and scaling across many servers. This project was coded entirely in C++. I applied technical Computer Science knowledge in servers, RESTful crud, etc.',
+      'If you like zeros and ones, then you are like me.',
+    ],
   },
   {
     id: 3,
@@ -29,7 +37,6 @@ const projects = [
     title: 'Robo Duck',
     subTitle: 'Would you believe me if I told you...?',
     githubLink: 'https://github.com/MikeIrlbeck/personal-site',
-    stars: 84,
   },
 ];
 

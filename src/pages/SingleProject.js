@@ -6,9 +6,8 @@ import { useParams } from 'react-router-dom';
 const SingleProject = () => {
   const { id } = useParams();
   console.log('single project - ', id);
-  const { title, url, subTitle, stars, githubLink, video } = data.find(
-    (item) => item.id === parseInt(id)
-  );
+  const { title, url, subTitle, description, stars, githubLink, video } =
+    data.find((item) => item.id === parseInt(id));
   return (
     <div className='page-container'>
       <h1 className='page-title'>{title}</h1>
@@ -27,6 +26,13 @@ const SingleProject = () => {
           alt={`${title}`}
           className='individual-project-img'
         ></img>
+      )}
+      {description && (
+        <div className='description-container'>
+          {description.map((item) => {
+            return <p>{item}</p>;
+          })}
+        </div>
       )}
       {githubLink && (
         <p className='individual-project-git'>
@@ -49,6 +55,7 @@ SingleProject.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
+  description: PropTypes.array,
   stars: PropTypes.number,
   githubLink: PropTypes.string,
   video: PropTypes.string,
