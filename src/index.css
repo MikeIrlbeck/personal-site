@@ -129,31 +129,9 @@ Navbar
   color: var(--primaryColor);
 }
 
-.social {
-  display: flex;
-  align-items: center;
-}
-.social a {
-  text-transform: capitalize;
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 1.2rem;
-  padding: 0.25rem 0.5rem;
-  transition: var(--mainTransition);
-}
-.social a:hover {
-  color: var(--primaryColor);
-}
-
 @media screen and (max-width: 800px) {
   .nav-links a {
     font-size: 1rem;
-  }
-  .social {
-    display: none;
   }
 }
 
@@ -191,6 +169,39 @@ Pages
   /* margin: 1rem auto; */
   text-align: center;
 }
+
+/* 
+====== 
+Contact
+======
+*/
+.email {
+  padding: 1rem;
+  font-style: italic;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.social a {
+  text-transform: capitalize;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  padding: 0.25rem 0.5rem;
+  transition: var(--mainTransition);
+}
+.social a:hover {
+  color: var(--primaryColor);
+}
+
 /* 
 ====== 
 Hero

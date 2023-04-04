@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { links } from '../data/NavLinks';
 
-import { links, social } from '../data/NavLinks';
 const Navbar = () => {
   return (
     <nav className='navbar'>
@@ -14,18 +14,6 @@ const Navbar = () => {
             return (
               <li key={id}>
                 <Link to={url}>{text}</Link>
-              </li>
-            );
-          })}
-        </ul>
-
-        <ul className='social'>
-          {social.map((link) => {
-            const { id, url, icon } = link;
-            console.log(link);
-            return (
-              <li key={id}>
-                <Link to={url}>{icon}</Link>
               </li>
             );
           })}
