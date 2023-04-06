@@ -93,56 +93,99 @@ img {
 Navbar
 ======
 */
-.navbar {
+nav {
   background: var(--mainWhite);
-  height: var(--navbarHeight);
+  /* height: var(--navbarHeight);
   display: flex;
 
   align-items: center;
-  border-bottom: 2px solid var(--primaryColor);
+  border-bottom: 2px solid var(--primaryColor); */
   box-shadow: var(--lightShadow);
 }
-.nav-center {
+.nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: var(--smallWidth);
+  padding: 1rem;
+  /* width: var(--smallWidth);
   margin: 0 auto;
-  max-width: var(--fullWidth);
+  max-width: var(--fullWidth); */
 }
-.nav-links {
+.name {
+  color: var(--mainBlack);
+  letter-spacing: var(--mainSpacing);
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--mainBlack);
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+}
+/* .links {
   display: flex;
   align-items: center;
-}
-.nav-links a {
-  text-transform: capitalize;
-  display: inline-block;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  font-weight: 400;
-  letter-spacing: 2px;
+} */
+.links a {
+  color: var(--mainBlack);
   font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
   padding: 0.25rem 0.5rem;
   transition: var(--mainTransition);
 }
-.nav-links a:hover {
-  color: var(--primaryColor);
+.links a:hover {
+  color: var(--mainWhite);
+  background: var(--primaryColor);
+  padding-left: 1.5rem;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-container {
+  height: 10rem;
 }
 
-@media screen and (max-width: 800px) {
-  .nav-links a {
-    font-size: 1rem;
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
   }
-}
-
-@media screen and (max-width: 550px) {
-  .nav-links {
-    flex-wrap: wrap;
-    max-width: 70vw;
-    justify-content: center;
+  .nav-header {
+    padding: 0;
   }
-  .nav-links a {
-    font-size: 0.8rem;
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    color: var(--primaryColor);
+    background: transparent;
   }
 }
 
